@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/etID"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvID"
+        android:layout_alignBottom="@+id/tvID"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvPWD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etID"
+        android:layout_marginTop="29dp"
+        android:layout_toLeftOf="@+id/etID"
+        android:text="@string/tvPWD" />
+
+    <EditText
+        android:id="@+id/etPWD"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvPWD"
+        android:layout_alignBottom="@+id/tvPWD"
+        android:layout_alignLeft="@+id/etID"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btToRegist"
+        android:layout_alignBottom="@+id/btToRegist"
+        android:layout_toRightOf="@+id/tvPWD"
+        android:text="@string/btLogin" />
+
+    <Button
+        android:id="@+id/btToRegist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPWD"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@+id/btLogin"
+        android:text="@string/btToRegist" />
+
+    <TextView
+        android:id="@+id/tvID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="155dp"
+        android:layout_toLeftOf="@+id/etPWD"
+        android:text="@string/tvID" />
+
+</RelativeLayout>

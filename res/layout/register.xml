@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/etID"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvID"
+        android:layout_alignBottom="@+id/tvID"
+        android:layout_alignLeft="@+id/btRegist"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvPWD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etID"
+        android:layout_marginTop="29dp"
+        android:layout_toLeftOf="@+id/etID"
+        android:text="@string/tvPWD" />
+
+    <EditText
+        android:id="@+id/etPWD"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvPWD"
+        android:layout_alignBottom="@+id/tvPWD"
+        android:layout_alignLeft="@+id/etID"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tvCellPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPWD"
+        android:layout_below="@+id/etPWD"
+        android:layout_marginTop="36dp"
+        android:text="@string/tvCellPhone" />
+
+    <EditText
+        android:id="@+id/etCellPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvCellPhone"
+        android:layout_alignBottom="@+id/tvCellPhone"
+        android:layout_alignLeft="@+id/etPWD"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/tvID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPWD"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="131dp"
+        android:text="@string/tvID" />
+
+    <Button
+        android:id="@+id/btRegist"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCellPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/btRegist" />
+
+</RelativeLayout>

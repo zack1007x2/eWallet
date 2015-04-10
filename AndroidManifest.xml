@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nfcwallet"
+    android:versionCode="1"
+    android:versionName="1.2.1" >
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="15"/>
+	<uses-permission android:name="android.permission.NFC" />
+	<uses-feature android:name="android.hardware.nfc" android:required="true" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+   	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:debuggable="true"
+        >
+        
+        <activity
+            android:name="com.example.nfcwallet.MainMenu">
+        </activity>
+        <activity
+            android:name="com.example.nfcwallet.SelectorActivity"
+            android:label="@string/app_name" 
+            android:noHistory="true">
+        </activity>
+        <activity android:name="com.example.nfcwallet.NFCProxyActivity" android:label="@string/importCredit" android:launchMode="singleInstance"/>
+        <activity android:name="com.example.nfcwallet.NFCRelayActivity" android:label="@string/importCredit" android:launchMode="singleInstance"/>   
+        <activity
+            android:name="com.example.nfcwallet.AccountDetail"
+            android:label="@string/btAccount">
+		</activity>
+		<activity
+            android:name="com.example.nfcwallet.CardStore"
+            android:label="@string/cardstore">
+		</activity>
+		<activity
+            android:name="com.example.nfcwallet.CardsView"
+            android:label="@string/btCards">
+		</activity>
+		<activity
+            android:name="com.example.nfcwallet.CreditDetail"
+            android:label="@string/btAccount">
+		</activity>
+		<activity
+            android:name="com.example.nfcwallet.Setting"
+            android:label="@string/setting">
+		</activity>
+		<activity
+            android:name="com.example.nfcwallet.login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+		</activity>
+		<activity
+            android:name="com.example.nfcwallet.MyAccount"
+            android:label="@string/btAccount"
+            android:launchMode="singleInstance">
+		</activity>
+		<activity
+            android:name="com.example.nfcwallet.Register"
+            android:label="@string/register">
+		</activity>
+		<activity
+            android:name="com.example.nfcwallet.CreditSelectorActivity"
+            android:label="@string/app_name"
+            android:noHistory="true">
+		</activity>
+		
+		<activity
+            android:name="com.example.nfcwallet.PasscodeSetting"
+            android:label="@string/register">
+		</activity>
+		<activity
+            android:name="com.example.nfcwallet.PasscodeConfirm"
+            android:label="@string/register">
+		</activity>
+		<activity
+            android:name="com.example.nfcwallet.Passcode"
+            android:label="@string/register">
+		</activity>
+		<activity
+            android:name="com.example.nfcwallet.WalletDetail"
+            android:label="@string/register">
+		</activity>
+        
+    </application>
+
+</manifest>
